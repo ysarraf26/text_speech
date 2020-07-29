@@ -108,7 +108,7 @@ if __name__ == "__main__":
         _, m, attention = tts_model.generate(x)
 
         if input_text:
-            save_path = f'quick_start/__input_{input_text[:10]}_{tts_k}k.wav'
+            save_path = f'quick_start/__input_{input_text[:2]}_{tts_k}k.wav'
         else:
             save_path = f'quick_start/{i}_batched{str(batched)}_{tts_k}k.wav'
 
